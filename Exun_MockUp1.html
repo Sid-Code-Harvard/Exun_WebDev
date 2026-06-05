@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LearnHub</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f5f7fb;
+color:#111;
+}
+
+nav{
+height:80px;
+background:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 80px;
+box-shadow:0 2px 20px rgba(0,0,0,.05);
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+}
+
+.logo span{
+color:#ff5a5f;
+}
+
+.nav-buttons{
+display:flex;
+gap:12px;
+}
+
+.btn{
+padding:10px 20px;
+border-radius:8px;
+border:none;
+cursor:pointer;
+font-weight:600;
+}
+
+.btn-outline{
+background:white;
+border:1px solid #ff5a5f;
+color:#ff5a5f;
+}
+
+.btn-solid{
+background:#ff5a5f;
+color:white;
+}
+
+.hero{
+background:linear-gradient(135deg,#ff6464,#ff7d7d);
+height:420px;
+display:flex;
+align-items:center;
+padding:0 80px;
+}
+
+.hero-content{
+max-width:550px;
+}
+
+.hero h1{
+font-size:60px;
+line-height:1.1;
+color:white;
+margin-bottom:25px;
+}
+
+.search{
+width:100%;
+padding:16px 20px;
+border:none;
+border-radius:10px;
+font-size:15px;
+outline:none;
+}
+
+.section{
+padding:70px 80px;
+}
+
+.section-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:30px;
+}
+
+.section-title{
+font-size:28px;
+font-weight:700;
+}
+
+.more{
+text-decoration:none;
+color:#ff5a5f;
+font-weight:500;
+}
+
+.course-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 8px 30px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card-image{
+height:180px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:60px;
+font-weight:700;
+color:white;
+}
+
+.blue{
+background:linear-gradient(135deg,#3f8cff,#4eb2ff);
+}
+
+.yellow{
+background:linear-gradient(135deg,#ffd000,#ffea61);
+color:#222;
+}
+
+.green{
+background:linear-gradient(135deg,#61c300,#8de100);
+}
+
+.card-content{
+padding:25px;
+}
+
+.card-title{
+font-size:20px;
+font-weight:600;
+margin-bottom:10px;
+}
+
+.card-text{
+font-size:14px;
+color:#777;
+line-height:1.6;
+}
+
+.card-author{
+margin-top:15px;
+font-size:13px;
+color:#999;
+}
+
+footer{
+margin-top:50px;
+background:#111827;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+@media(max-width:768px){
+
+nav{
+padding:0 25px;
+}
+
+.hero{
+padding:40px 25px;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.section{
+padding:50px 25px;
+}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">Learn<span>Hub</span></div>
+
+<div class="nav-buttons">
+<button class="btn btn-outline">Register</button>
+<button class="btn btn-solid">Login</button>
+</div>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Learning is the key to success.</h1>
+
+<input
+type="text"
+class="search"
+placeholder="Search courses..."
+>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="section-header">
+<h2 class="section-title">Programming</h2>
+<a href="#" class="more">See More</a>
+</div>
+
+<div class="course-grid">
+
+<div class="card">
+<div class="card-image blue">HTML</div>
+<div class="card-content">
+<div class="card-title">HTML & CSS Masterclass</div>
+<div class="card-text">
+Build beautiful responsive websites from scratch using modern HTML and CSS.
+</div>
+<div class="card-author">By Alex Johnson</div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-image yellow">JS</div>
+<div class="card-content">
+<div class="card-title">JavaScript Crash Course</div>
+<div class="card-text">
+Learn variables, functions, DOM manipulation and build interactive projects.
+</div>
+<div class="card-author">By Sarah Williams</div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-image green">Node</div>
+<div class="card-content">
+<div class="card-title">Node.js for Beginners</div>
+<div class="card-text">
+Understand backend development and create powerful web applications.
+</div>
+<div class="card-author">By Michael Brown</div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="section-header">
+<h2 class="section-title">Business</h2>
+<a href="#" class="more">See More</a>
+</div>
+
+<div class="course-grid">
+
+<div class="card">
+<div class="card-image blue">BI</div>
+<div class="card-content">
+<div class="card-title">Business Intelligence</div>
+<div class="card-text">
+Master data-driven decision making with real-world business analytics.
+</div>
+<div class="card-author">By Emma Wilson</div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-image yellow">PBI</div>
+<div class="card-content">
+<div class="card-title">Microsoft Power BI</div>
+<div class="card-text">
+Create dashboards and transform raw data into valuable business insights.
+</div>
+<div class="card-author">By David Clark</div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-image green">AG</div>
+<div class="card-content">
+<div class="card-title">Agile Project Management</div>
+<div class="card-text">
+Learn Scrum, Agile workflows and team management strategies.
+</div>
+<div class="card-author">By Sophia Taylor</div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 LearnHub Academy. All Rights Reserved.
+</footer>
+
+</body>
+</html>
