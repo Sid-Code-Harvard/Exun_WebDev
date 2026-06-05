@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nova Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#06020f;
+color:white;
+padding:20px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+.card{
+background:linear-gradient(
+135deg,
+#140924,
+#1d1033,
+#2a1547
+);
+border:1px solid rgba(255,255,255,.06);
+border-radius:16px;
+padding:35px;
+margin-bottom:20px;
+box-shadow:
+0 10px 40px rgba(0,0,0,.4);
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 30px;
+}
+
+.logo{
+font-size:22px;
+font-weight:700;
+}
+
+.menu{
+display:flex;
+gap:30px;
+}
+
+.menu a{
+color:#ddd;
+text-decoration:none;
+font-size:14px;
+transition:.3s;
+}
+
+.menu a:hover{
+color:#b47cff;
+}
+
+.hero{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.hero h1{
+font-size:52px;
+margin-bottom:15px;
+}
+
+.hero h1 span{
+color:#b47cff;
+}
+
+.hero p{
+color:#bfbfd4;
+line-height:1.8;
+margin-bottom:25px;
+}
+
+.buttons{
+display:flex;
+gap:15px;
+}
+
+.btn{
+padding:12px 24px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-weight:600;
+}
+
+.primary{
+background:#8f5bff;
+color:white;
+}
+
+.secondary{
+background:#24143c;
+color:white;
+}
+
+.hero-image{
+height:320px;
+border-radius:14px;
+background:
+linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),
+url("https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200");
+background-size:cover;
+background-position:center;
+}
+
+.section-title{
+text-align:center;
+font-size:38px;
+margin-bottom:25px;
+}
+
+.about-text{
+text-align:center;
+max-width:900px;
+margin:auto;
+line-height:1.8;
+color:#c8c8d8;
+}
+
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px;
+}
+
+.project{
+height:220px;
+border-radius:12px;
+overflow:hidden;
+}
+
+.project img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:.4s;
+}
+
+.project:hover img{
+transform:scale(1.08);
+}
+
+.newsletter{
+text-align:center;
+}
+
+.newsletter h2{
+margin-bottom:25px;
+font-size:38px;
+}
+
+.newsletter-form{
+max-width:600px;
+margin:auto;
+display:flex;
+overflow:hidden;
+border-radius:12px;
+}
+
+.newsletter-form input{
+flex:1;
+padding:16px;
+border:none;
+outline:none;
+background:#1b1030;
+color:white;
+}
+
+.newsletter-form button{
+padding:16px 30px;
+border:none;
+background:#8f5bff;
+color:white;
+font-weight:600;
+cursor:pointer;
+}
+
+footer{
+text-align:center;
+padding:30px;
+color:#9d9db1;
+}
+
+@media(max-width:900px){
+
+.hero{
+grid-template-columns:1fr;
+}
+
+.projects-grid{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:40px;
+}
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="card">
+<nav>
+
+<div class="logo">Nova</div>
+
+<div class="menu">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Projects</a>
+<a href="#">Newsletter</a>
+</div>
+
+</nav>
+</div>
+
+<div class="card">
+
+<div class="hero">
+
+<div>
+
+<h1>Hello, <span>There!</span></h1>
+
+<p>
+I design beautiful digital experiences and modern web applications.
+Combining creativity with technology, I build products that are
+both functional and visually engaging.
+</p>
+
+<div class="buttons">
+<button class="btn primary">Projects</button>
+<button class="btn secondary">Newsletter</button>
+</div>
+
+</div>
+
+<div class="hero-image"></div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2 class="section-title">About</h2>
+
+<p class="about-text">
+I am a passionate developer focused on crafting intuitive user
+interfaces, responsive web applications and digital products.
+My work blends design, performance and usability to create
+experiences that users genuinely enjoy.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="projects-grid">
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1000">
+</div>
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=1000">
+</div>
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1000">
+</div>
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1000">
+</div>
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1000">
+</div>
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1000">
+</div>
+
+</div>
+
+</div>
+
+<div class="card newsletter">
+
+<h2>Newsletter</h2>
+
+<div class="newsletter-form">
+<input type="email" placeholder="Enter your email">
+<button>Subscribe</button>
+</div>
+
+</div>
+
+<footer>
+© 2026 Nova Portfolio. All Rights Reserved.
+</footer>
+
+</div>
+
+</body>
+</html>
